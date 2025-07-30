@@ -1,0 +1,31 @@
+# For more details on the format and content:
+# https://github.com/robocorp/rcc/blob/master/docs/recipes.md#what-is-in-robotyaml
+
+tasks:
+  Sales force:
+    shell: python -m robocorp.tasks run tasks.py -t sales_forces
+  Sales app Data loader:
+    shell: python -m robocorp.tasks run tasks.py -t saleforce_app_data_loader
+  Sales Account and Cobtact rel:
+    shell: python -m robocorp.tasks run tasks.py -t salesforec_app_account_and_contact_relastion
+  Salesforce product:
+    shell: python -m robocorp.tasks run tasks.py -t saleforce_product
+  Opperunity:
+    shell: python -m robocorp.tasks run tasks.py -t create_opperunity
+  Query task:
+    shell: python -m robocorp.tasks run tasks.py -t saleforce_app_query_task
+
+environmentConfigs:
+  - environment_windows_amd64_freeze.yaml
+  - environment_linux_amd64_freeze.yaml
+  - environment_darwin_amd64_freeze.yaml
+  - conda.yaml
+
+artifactsDir: output
+
+PATH:
+  - .
+PYTHONPATH:
+  - .
+ignoreFiles:
+  - .gitignore

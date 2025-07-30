@@ -1,0 +1,30 @@
+[
+    {
+        "a_name" :     "Account-A",
+        "a_type" :     "Prospect",
+        "a_industry" : "Engeering",
+        "a_billcity" : "Bangalore",
+        "a_ph": "9988990077"
+    },
+    {
+        "a_name" :     "Account-B",
+        "a_type" :     "Prospect",
+        "a_industry" : "Medical",
+        "a_billcity" : "California",
+        "a_ph": "9988990054"
+    },
+    {
+        "a_name" :     "Account-C",
+        "a_type" :     "Prospect",
+        "a_industry" : "Engeering",
+        "a_billcity" : "MountainView",
+        "a_ph": "9088640054"
+    },
+    {
+        "a_name" :     "Account-D",
+        "a_type" :     "Prospect",
+        "a_industry" : "Banking",
+        "a_billcity" : "MountainView",
+        "a_ph": "9088640054"
+    }
+]

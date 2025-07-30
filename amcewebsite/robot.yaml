@@ -1,0 +1,25 @@
+# For more details on the format and content:
+# https://github.com/robocorp/rcc/blob/master/docs/recipes.md#what-is-in-robotyaml
+
+tasks:
+  Seach Invoice:
+    shell: python -m robocorp.tasks run tasks.py -t amce_web
+  Work Item:
+    shell: python -m robocorp.tasks run workitem.py -t workItem
+  Login:
+    shell: python -m robocorp.tasks run login.py -t login_amce
+
+environmentConfigs:
+  - environment_windows_amd64_freeze.yaml
+  - environment_linux_amd64_freeze.yaml
+  - environment_darwin_amd64_freeze.yaml
+  - conda.yaml
+
+artifactsDir: output
+
+PATH:
+  - .
+PYTHONPATH:
+  - .
+ignoreFiles:
+  - .gitignore

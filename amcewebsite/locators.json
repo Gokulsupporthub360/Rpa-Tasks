@@ -1,0 +1,12 @@
+{
+    "numseven": {
+        "type": "windows",
+        "value": "control:\"ButtonControl\" and class:\"Button\" and name:\"Seven\" and automationid:\"num7Button\"",
+        "window": "Calculator",
+        "name": "numseven",
+        "element": {
+            "tag": "ButtonControl"
+        },
+        "version": 1
+    }
+}
